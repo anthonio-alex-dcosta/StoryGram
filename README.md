@@ -165,11 +165,12 @@ StoryGram/
 # 1 · Backend  →  http://localhost:3500
 cd backend
 npm install
-# .env → MONGO_URI, JWT_SECRET, EMAIL_USER, EMAIL_PASS
+cp .env.example .env   # then fill in MONGO_URI, JWT_SECRET, EMAIL_USER, EMAIL_PASS
 npm start
 
 # 2 · AI service  →  http://127.0.0.1:8010
 cd ../ai
+cp .env.example .env
 pip install -r requirements.txt
 ollama pull llama3
 python run.py

@@ -1,2 +1,11 @@
 /backend/node_modules
 /frontend/node_modules
+# Secrets — never commit real values; copy .env.example to .env instead
+.env
+**/.env
+!**/.env.example
+
+# Python / OS artifacts
+__pycache__/
+*.pyc
+.DS_Store
